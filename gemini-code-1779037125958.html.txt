@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="id">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Buat Kamu - Sukses TKA Kelas 9</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <style>
+      :root {
+        --primary-color: #0077B6 !important;
+        --accent-color: #023E8A !important;
+      }
+      /* Mengubah aksen warna oranye template menjadi Ocean Blue */
+      .main-button a, 
+      .orange-button, 
+      .icon-button a, 
+      header .nav li a:hover, 
+      header .nav li a.active,
+      .services .service-item .icon,
+      .fun-facts,
+      .scroll-to-section a.active,
+      .special-offer span.offer,
+      #form-submit {
+        background-color: var(--primary-color) !important;
+        color: #fff !important;
+      }
+      .section-heading h6 {
+        color: var(--primary-color) !important;
+      }
+      .section-heading h2 {
+        color: var(--accent-color) !important;
+      }
+      .services .service-item h4 {
+        color: var(--accent-color) !important;
+      }
+      header .nav li a {
+        color: var(--accent-color) !important;
+      }
+      .team-member .main-content {
+        border-top: 5px solid var(--primary-color) !important;
+      }
+      .events_item .thumb span.category, .events_item .thumb span.price {
+        background-color: var(--primary-color) !important;
+      }
+      /* Custom Accordion FAQ */
+      .custom-faq-item {
+        border: 1px solid #90E0EF;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        background: #fff;
+        overflow: hidden;
+      }
+      .custom-faq-header {
+        background: #F8F9FA;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--accent-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+      .custom-faq-header:hover {
+        background: #E0F2FE;
+      }
+      .custom-faq-body {
+        display: none;
+        padding: 20px;
+        background: #fff;
+        font-size: 14px;
+        color: #4A5568;
+        border-top: 1px solid #E2E8F0;
+      }
+      /* Pricing Table Card */
+      .pricing-card {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        text-align: center;
+        border: 2px solid #90E0EF;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+      }
+      .pricing-card.featured {
+        border-color: var(--primary-color);
+        box-shadow: 0px 10px 25px rgba(0, 119, 182, 0.15);
+      }
+      .pricing-card h3 {
+        color: var(--accent-color);
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      .pricing-card .price {
+        font-size: 32px;
+        font-weight: 800;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+      }
+      .pricing-card ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+      .pricing-card ul li {
+        margin-bottom: 12px;
+        font-size: 14px;
+        color: #4A5568;
+      }
+      .pricing-card ul li i {
+        color: #2ECC71;
+        margin-right: 10px;
+      }
+      /* Input Error Client Validation */
+      .error-text {
+        color: #E63946;
+        font-size: 12px;
+        margin-top: 5px;
+        display: none;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+<body>
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <h1>Buat Kamu</h1>
+                    </a>
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Cari materi..." id='searchText' name="searchKeyword" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="#services">Layanan</a></li>
+                      <li class="scroll-to-section"><a href="#about">Tentang Kami</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Materi TKA</a></li>
+                      <li class="scroll-to-section"><a href="#pricing">Biaya Paket</a></li>
+                      <li class="scroll-to-section"><a href="#faq">FAQ</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Daftar</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">Buat Kamu Sukses TKA</span>
+                <h2>Bimbingan Belajar Spesialis Kelas 9</h2>
+                <p>Website interaktif penyedia latihan soal taktis, video bimbingan, dan informasi lengkap seputar seleksi Tes Kemampuan Akademik (TKA) tingkat SMP/MTs.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#courses">Mulai Belajar</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="#about"><i class="fa fa-play"></i> Apa itu TKA?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Hasil Maksimal</span>
+                <h2>Kuasai 4 Mata Pelajaran Pokok</h2>
+                <p>Fokus pendalaman materi inti TKA: Bahasa Indonesia, Bahasa Inggris, Matematika, dan Ilmu Pengetahuan Alam (IPA) yang disesuaikan dengan kisi-kisi terupdate.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#courses">Lihat Kisi-Kisi</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=80&h=80&fit=crop" alt="video pembelajaran" style="border-radius: 50%;">
+            </div>
+            <div class="main-content">
+              <h4>Video Pembelajaran</h4>
+              <p>Belajar asyik kapan saja lewat integrasi video materi interaktif yang bersumber langsung dari YouTube resmi kami.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=80&h=80&fit=crop" alt="latihan soal" style="border-radius: 50%;">
+            </div>
+            <div class="main-content">
+              <h4>Latihan Soal & Pembahasan</h4>
+              <p>Ratusan paket bank soal prediksi TKA akurat dilengkapi dengan trik pembahasan cepat pengerjaan rumus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=80&h=80&fit=crop" alt="informasi lembaga" style="border-radius: 50%;">
+            </div>
+            <div class="main-content">
+              <h4>Informasi Lembaga</h4>
+              <p>Update pengumuman jadwal pelaksanaan, passing grade, dan berita bimbingan terkini dari "Buat Kamu".</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-1">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Mengapa Persiapan TKA itu Penting?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Tes Kemampuan Akademik (TKA) merupakan pilar seleksi masuk sekolah menengah unggulan nasional. Persiapan matang sejak kelas 9 membantu memperbesar peluang lolos impianmu.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Bagaimana Metode Pembelajaran Kami?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Kami mengombinasikan konsep <strong>Belajar Mandiri Visual</strong> lewat rangkuman poin-poin penting serta uji coba berkala menggunakan simulasi tes berbasis waktu.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>Tentang Lembaga</h6>
+            <h2>Mitra Terbaik Menuju Kelulusan Siswa</h2>
+            <p>Lembaga "Buat Kamu" berkomitmen menyajikan konten edukasi yang ringkas, mudah dipahami, dan ramah kantong demi melahirkan generasi muda berprestasi tinggi.</p>
+            <div class="main-button">
+              <a href="#contact">Hubungi Mentor Kami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Program Unggulan</h6>
+            <h2>Kategori Pembelajaran Utama</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row event_box">
+        <div class="col-lg-3 col-md-6 align-self-center mb-30">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=350&h=240&fit=crop" alt="B Indo"></a>
+              <span class="category">Bahasa Indonesia</span>
+            </div>
+            <div class="down-content">
+              <h4>Pemahaman Bacaan, EBI, & Struktur Teks</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 align-self-center mb-30">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=350&h=240&fit=crop" alt="B Inggris"></a>
+              <span class="category">Bahasa Inggris</span>
+            </div>
+            <div class="down-content">
+              <h4>Reading Comprehension & Grammar Hack</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 align-self-center mb-30">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=350&h=240&fit=crop" alt="Mtk"></a>
+              <span class="category">Matematika</span>
+            </div>
+            <div class="down-content">
+              <h4>Aljabar, Geometri, Statiska & Logika Angka</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 align-self-center mb-30">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=350&h=240&fit=crop" alt="IPA"></a>
+              <span class="category">Ilmu Pengetahuan Alam</span>
+            </div>
+            <div class="down-content">
+              <h4>Intisari Fisika, Kimia Dasar, & Biologi Tubuh</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="1250" data-speed="1500"></h2>
+                   <p class="count-text ">Siswa Lulus Seleksi</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="320" data-speed="1500"></h2>
+                  <p class="count-text ">Video Materi YouTube</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="1500" data-speed="1500"></h2>
+                  <p class="count-text ">Kumpulan Soal Latihan</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter end">
+                  <h2 class="timer count-title count-number" data-to="98" data-speed="1500"></h2>
+                  <p class="count-text ">% Kepuasan Belajar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="pricing" style="padding: 100px 0; background: #f8f9fa;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Investasi Edukasi</h6>
+            <h2>Pilihan Biaya Paket Belajar</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="pricing-card">
+            <h3>Paket Mandiri</h3>
+            <div class="price">Rp 49.000<span style="font-size: 16px; font-weight: normal; color: #718096;"> /bln</span></div>
+            <ul>
+              <li><i class="fa fa-check"></i> Akses Semua Video Pembelajaran YT</li>
+              <li><i class="fa fa-check"></i> Rangkuman Materi Pokok PDF</li>
+              <li><i class="fa fa-times" style="color: #E63946;"></i> Grup Komunitas Tanya Jawab</li>
+            </ul>
+            <div class="main-button"><a href="#contact">Pilih Paket</a></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="pricing-card featured">
+            <h3>Paket Sukses TKA</h3>
+            <div class="price">Rp 149.000<span style="font-size: 16px; font-weight: normal; color: #718096;"> /bln</span></div>
+            <ul>
+              <li><i class="fa fa-check"></i> Akses Seluruh Video Pembelajaran YT</li>
+              <li><i class="fa fa-check"></i> Ribuan Bank Soal Premium & Jawaban</li>
+              <li><i class="fa fa-check"></i> 4x Tryout Akurat Berbasis Waktu</li>
+            </ul>
+            <div class="main-button"><a href="#contact" style="background:#023E8A !important;">Pilih Paket Terlaris</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="faq" style="padding: 100px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading text-center">
+            <h6>Tanya Jawab</h6>
+            <h2>Pertanyaan yang Sering Diajukan</h2>
+          </div>
+          <div class="custom-faq-container">
+            <div class="custom-faq-item">
+              <div class="custom-faq-header" onclick="toggleFaq(this)">Apa itu program TKA "Buat Kamu"? <i class="fa fa-chevron-down"></i></div>
+              <div class="custom-faq-body">Program bimbingan khusus belajar materi persiapan tes kompetensi akademik bagi siswa kelas 9 agar siap menembus jenjang sekolah lanjutan favorit.</div>
+            </div>
+            <div class="custom-faq-item">
+              <div class="custom-faq-header" onclick="toggleFaq(this)">Bagaimana cara menonton video materi? <i class="fa fa-chevron-down"></i></div>
+              <div class="custom-faq-body">Seluruh rekaman video pembelajaran bersumber dari kanal YouTube resmi kami dan disematkan langsung di portal belajar siswa.</div>
+            </div>
+            <div class="custom-faq-item">
+              <div class="custom-faq-header" onclick="toggleFaq(this)">Apakah bimbingan ini bisa diakses di smartphone? <i class="fa fa-chevron-down"></i></div>
+              <div class="custom-faq-body">Ya, tampilan website bimbingan belajar kami sudah mendukung layout responsif penuh yang ramah dan nyaman dilihat via HP/Tablet.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h6>Hubungi Kami</h6>
+            <h2>Mari Mulai Belajar Bersama</h2>
+            <p>Punya pertanyaan seputar cara pendaftaran kelas bimbingan? Isi data diri kamu di form samping, tim ramah kami akan segera memberikan informasi mendalam.</p>
+            <div class="special-offer">
+              <span class="offer">Diskon<br><em>50%</em></span>
+              <h6>Berlaku Hingga Bulan Ini</h6>
+              <h4>Promo Khusus Pendaftaran Awal Angkatan Baru!</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <div class="map-container mb-4" style="border-radius: 10px; overflow: hidden; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.2854749007!2d110.30052822765352!3d-7.801389620701168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d368d6ae!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1715878432111!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <form id="contact-form-val" novalidate>
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" id="val-name" placeholder="Nama Lengkap Kamu..." required>
+                    <div class="error-text" id="err-name">Nama tidak boleh kosong.</div>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="email" id="val-email" placeholder="Alamat E-mail Aktif..." required>
+                    <div class="error-text" id="err-email">Masukkan e-mail valid yang mengandung karakter '@'.</div>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea id="val-message" placeholder="Tulis pesan minat belajarmu di sini..." required></textarea>
+                    <div class="error-text" id="err-msg">Pesan tidak boleh kosong.</div>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Kirim Pesan Sekarang</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2026 Lembaga Buat Kamu. Hak Cipta Dilindungi Undang-Undang. &nbsp;&nbsp;&nbsp; Design Base: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    // Fungsi buka-tutup Akordeon FAQ
+    function toggleFaq(element) {
+      var body = element.nextElementSibling;
+      var icon = element.querySelector('i');
+      if (body.style.display === "block") {
+        body.style.display = "none";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        body.style.display = "block";
+        icon.style.transform = "rotate(180deg)";
+      }
+    }
+
+    // Validasi Sisi Klien Form Kontak saat disubmit
+    document.getElementById('contact-form-val').addEventListener('submit', function(e) {
+      e.preventDefault();
+      let valid = true;
+
+      const name = document.getElementById('val-name');
+      const email = document.getElementById('val-email');
+      const msg = document.getElementById('val-message');
+
+      if (name.value.trim() === '') {
+        document.getElementById('err-name').style.display = 'block';
+        valid = false;
+      } else {
+        document.getElementById('err-name').style.display = 'none';
+      }
+
+      if (!email.value.includes('@') || email.value.trim() === '') {
+        document.getElementById('err-email').style.display = 'block';
+        valid = false;
+      } else {
+        document.getElementById('err-email').style.display = 'none';
+      }
+
+      if (msg.value.trim() === '') {
+        document.getElementById('err-msg').style.display = 'block';
+        valid = false;
+      } else {
+        document.getElementById('err-msg').style.display = 'none';
+      }
+
+      if (valid) {
+        alert('Terima kasih! Pesan pendaftaran kamu berhasil dikirim ke Admin Lembaga "Buat Kamu".');
+        this.reset();
+      }
+    });
+  </script>
+
+  </body>
+</html>
