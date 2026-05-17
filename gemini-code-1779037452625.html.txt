@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Buat Kamu - Sukses TKA Kelas 9</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <style>
+      :root {
+        --primary-blue: #0077B6;
+        --dark-blue: #023E8A;
+        --light-blue: #0096C7;
+      }
+      
+      /* Mengubah background elemen utama */
+      .main-button a,
+      .orange-button,
+      .icon-button a,
+      .services .service-item .icon,
+      .fun-facts,
+      header .nav li a.active,
+      header .nav li a:hover,
+      .events_item .thumb span.category,
+      .events_item .thumb span.price,
+      .events .item ul li span.category,
+      #form-submit {
+        background-color: var(--primary-blue) !important;
+        color: #fff !important;
+      }
+
+      /* Mengubah warna teks aksen */
+      .section-heading h6,
+      .services .service-item h4,
+      .about-us .accordion-button:not(.collapsed),
+      .events .item h4,
+      .contact-us .special-offer h4 em,
+      .contact-us .special-offer h6 em {
+        color: var(--dark-blue) !important;
+      }
+
+      header .nav li a {
+        color: var(--dark-blue) !important;
+      }
+
+      /* Kontak & Banner Aksen */
+      .contact-us .special-offer span.offer {
+        background-color: var(--primary-blue) !important;
+      }
+      
+      .about-us .accordion-button:not(.collapsed) {
+        background-color: #e3f2fd !important;
+      }
+    </style>
+  </head>
+
+<body>
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <h1>Buat Kamu</h1>
+                    </a>
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Cari materi TKA..." id='searchText' name="searchKeyword" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="#services">Layanan</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Materi</a></li>
+                      <li class="scroll-to-section"><a href="#team">Tentor</a></li>
+                      <li class="scroll-to-section"><a href="#events">Agenda</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Daftar Sekarang</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">Bimbingan Belajar</span>
+                <h2>Dengan Mentor "Buat Kamu", TKA Menjadi Lebih Mudah</h2>
+                <p>Platform bimbingan belajar interaktif khusus siswa kelas 9 untuk menguasai Tes Kemampuan Akademik (TKA) dengan metode taktis dan mudah dipahami.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#courses">Mulai Belajar</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="#services"><i class="fa fa-play"></i> Lihat Layanan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Target Nilai Tinggi</span>
+                <h2>Raih Hasil Terbaik Lewat Latihan Konsisten</h2>
+                <p>Akses ratusan bank soal prediksi yang dirancang sesuai dengan kisi-kisi terupdate untuk memaksimalkan peluang lolos ke sekolah impianmu.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#events">Lihat Jadwal TO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-01.png" alt="bahasa">
+            </div>
+            <div class="main-content">
+              <h4>Materi Bahasa</h4>
+              <p>Pendalaman materi Bahasa Indonesia dan Bahasa Inggris fokus pada pemahaman teks bacaan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-02.png" alt="matematika">
+            </div>
+            <div class="main-content">
+              <h4>Matematika TKA</h4>
+              <p>Trik cepat pengerjaan rumus aljabar, geometri, statistika, dan logika angka numerik.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-03.png" alt="ipa">
+            </div>
+            <div class="main-content">
+              <h4>Ilmu Pengetahuan Alam</h4>
+              <p>Rangkuman konsep inti fisika, kimia dasar, dan biologi yang sering keluar di lembar ujian.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-02.png" alt="tryout">
+            </div>
+            <div class="main-content">
+              <h4>Simulasi CBT</h4>
+              <p>Uji kemampuanmu lewat simulasi ujian berbasis komputer yang mirip dengan tes aslinya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-1">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Materi apa saja yang dipelajari?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Kami fokus membedah <strong>4 Mata Pelajaran Pokok</strong> TKA, yaitu Matematika, Ilmu Pengetahuan Alam (IPA), Bahasa Indonesia, dan Bahasa Inggris.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Bagaimana sistem latihan soalnya?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Setiap paket materi dilengkapi dengan <strong>latihan soal mandiri</strong> dan pembahasan interaktif langkah demi langkah berupa teks serta video bimbingan.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Siapa saja mentor di Buat Kamu?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Seluruh mentor kami merupakan pengajar berpengalaman yang ahli di bidangnya dan siap membantu memecahkan soal sesulit apa pun.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>Tentang Kami</h6>
+            <h2>Mitra Terbaik Menuju Kelulusan Siswa</h2>
+            <p>Lembaga bimbingan belajar "Buat Kamu" hadir untuk membantu siswa kelas 9 SMP/MTs menguasai materi ujian seleksi masuk sekolah favorit dengan suasana belajar yang menyenangkan dan terarah.</p>
+            <div class="main-button">
+              <a href="#contact">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section courses" id="courses" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Program Kelas</h6>
+            <h2>Kategori Pembelajaran Populer</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row event_box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/course-01.jpg" alt="Materi"></a>
+              <span class="category">Bahasa Indonesia</span>
+              <span class="price"><h6>Gratis</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Mentor Bahasa</span>
+              <h4>Bedah Materi & Struktur Teks Bacaan</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/course-02.jpg" alt="Materi"></a>
+              <span class="category">Bahasa Inggris</span>
+              <span class="price"><h6>Premium</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Mentor Inggris</span>
+              <h4>Tips Menguasai Reading & Grammar Hack</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="assets/images/course-03.jpg" alt="Materi"></a>
+              <span class="category">Matematika</span>
+              <span class="price"><h6>Premium</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Mentor Matematika</span>
+              <h4>Trik Cepat Rumus Aljabar & Geometri</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="550" data-speed="1000"></h2>
+                   <p class="count-text ">Siswa Lulus Seleksi</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="140" data-speed="1000"></h2>
+                  <p class="count-text ">Jam Video Pembelajaran</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="1200" data-speed="1000"></h2>
+                  <p class="count-text ">Kumpulan Soal Latihan</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter end">
+                  <h2 class="timer count-title count-number" data-to="5" data-speed="1000"></h2>
+                  <p class="count-text ">Tahun Pengalaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="team section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-01.jpg" alt="">
+              <span class="category">Mentor Matematika</span>
+              <h4>Kak Salsabila</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-02.jpg" alt="">
+              <span class="category">Mentor Bahasa Indonesia</span>
+              <h4>Kak Fanny</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-03.jpg" alt="">
+              <span class="category">Mentor IPA Terpadu</span>
+              <h4>Kak Rakha</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="assets/images/member-04.jpg" alt="">
+              <span class="category">Mentor Bahasa Inggris</span>
+              <h4>Kak Addin</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="section events" id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Agenda Terdekat</h6>
+            <h2>Jadwal Kegiatan Belajar & Tryout</h2>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Tryout Akbar</span>
+                    <h4>Simulasi TKA Mapel Bahasa Indonesia</h4>
+                  </li>
+                  <li>
+                    <span>Tanggal:</span>
+                    <h6>18 Juni 2026</h6>
+                  </li>
+                  <li>
+                    <span>Durasi:</span>
+                    <h6>120 Menit</h6>
+                  </li>
+                  <li>
+                    <span>Biaya:</span>
+                    <h6>Gratis</h6>
+                  </li>
+                </ul>
+                <a href="#contact"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-02.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Diskusi Kelas</span>
+                    <h4>Bedah Rumus Cepat Matematika Numerik</h4>
+                  </li>
+                  <li>
+                    <span>Tanggal:</span>
+                    <h6>24 Juni 2026</h6>
+                  </li>
+                  <li>
+                    <span>Durasi:</span>
+                    <h6>90 Menit</h6>
+                  </li>
+                  <li>
+                    <span>Tempat:</span>
+                    <h6>Live Zoom</h6>
+                  </li>
+                </ul>
+                <a href="#contact"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h6>Hubungi Kami</h6>
+            <h2>Isi Formulir Untuk Pendaftaran Kelas</h2>
+            <p>Segera gabung bersama ratusan siswa kelas 9 lainnya. Dapatkan akses bank soal lengkap dan grup diskusi eksklusif bersama para mentor ramah kami.</p>
+            <div class="special-offer">
+              <span class="offer">Diskon<br><em>50%</em></span>
+              <h6>Berlaku hingga: <em>Akhir Bulan Ini</em></h6>
+              <h4>Promo Angkatan Baru <em>Diskon 50%</em> Biaya Paket</h4>
+              <a href="#contact"><i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <form id="contact-form" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Nama Lengkap Kamu..." autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Alamat E-mail..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Tuliskan program materi yang ingin kamu tanyakan..."></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Kirim Formulir Sekarang</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2026 Portal Buat Kamu. Hak Cipta Dilindungi Undang-Undang. &nbsp;&nbsp;&nbsp; Design Base: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
